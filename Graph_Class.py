@@ -2,13 +2,8 @@ import numpy as np
 import string
 import sys
 import matplotlib
-#matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import networkx as nx 
-
-# TODO: verificare connessione con DFS (calcolo già albero)
-# TODO: in caso di grafo non connesso dividere in sottografi connessi ed eseguire greedy separatamente
-# TODO: implementare ordinamento nel caso di grafi regolari in modo da far valere teorema di Brooks
 
 ''' 
     ***** CLASSE GRAPH ******
@@ -29,6 +24,7 @@ import networkx as nx
                     Dijkstra                                trovo vettore di distanze da una sorgente a tutti gli altri vertici
                     (Metodi legati al Check)
                     (Metodi per calcolare grado, cammino...)
+                    Print                                   stampo risultati e salvo nella cartella Data
 
     Funzioni:       Merge_Sort, Merge    Ordinamento di due vettori (confronti fatti su uno dei due) in ordine DECRESCENTE!
 
